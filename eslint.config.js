@@ -34,5 +34,13 @@ export default [
         { allowConstantExport: true },
       ],
     },
-  },
+  }, 
+  {
+    files: ['**/*.test.js'],
+    languageOptions:  {
+      globals: {
+        ...globals.jest
+      }
+    }
+  }
 ]
